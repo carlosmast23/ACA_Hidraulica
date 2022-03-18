@@ -1,0 +1,12 @@
+=======================
+ENUNCIADO
+=======================
+Crear un sistema que me permita tener una pantalla de presentacion, menu de opciones con 2 pantallas que son de 2 formularios con ejercicios de hidraulica
+
+>TECNLOGIAS
+	Visual Studio C# Windows Form
+
+> FECHA DE ENTREGA
+	22/03/2022
+
+
