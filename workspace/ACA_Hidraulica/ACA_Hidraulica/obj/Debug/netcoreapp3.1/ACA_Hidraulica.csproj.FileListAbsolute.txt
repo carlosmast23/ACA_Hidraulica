@@ -17,3 +17,4 @@ C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\AC
 C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.MarcoTeorico.resources
 C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.Properties.Resources.resources
 C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.Proyecto.resources
+C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.PrimerFormulario.resources

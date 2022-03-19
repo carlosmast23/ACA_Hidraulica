@@ -24,5 +24,11 @@ namespace ACA_Hidraulica
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PrimerFormulario primerFormulario = new PrimerFormulario();
+            primerFormulario.Show();
+        }
     }
 }

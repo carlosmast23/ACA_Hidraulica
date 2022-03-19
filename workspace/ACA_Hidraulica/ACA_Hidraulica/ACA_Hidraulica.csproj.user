@@ -7,6 +7,9 @@
     <Compile Update="MarcoTeorico.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PrimerFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Proyecto.cs">
       <SubType>Form</SubType>
     </Compile>
