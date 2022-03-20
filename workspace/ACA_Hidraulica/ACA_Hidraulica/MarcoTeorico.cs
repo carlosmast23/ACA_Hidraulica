@@ -14,5 +14,10 @@ namespace ACA_Hidraulica
         {
             InitializeComponent();
         }
+
+        private void MarcoTeorico_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

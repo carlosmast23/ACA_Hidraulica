@@ -110,6 +110,7 @@ namespace ACA_Hidraulica
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Proyecto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

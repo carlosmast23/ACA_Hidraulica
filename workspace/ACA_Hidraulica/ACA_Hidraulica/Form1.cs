@@ -19,14 +19,23 @@ namespace ACA_Hidraulica
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             MarcoTeorico frm = new MarcoTeorico();
-            frm.Show();
+            frm.ShowDialog();
+            this.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             Proyecto frm = new Proyecto();
-            frm.Show();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
