@@ -18,3 +18,24 @@ C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\AC
 C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.Properties.Resources.resources
 C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.Proyecto.resources
 C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.PrimerFormulario.resources
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\bin\Debug\netcoreapp3.1\ACA_Hidraulica.exe
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\bin\Debug\netcoreapp3.1\ACA_Hidraulica.deps.json
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\bin\Debug\netcoreapp3.1\ACA_Hidraulica.runtimeconfig.json
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\bin\Debug\netcoreapp3.1\ACA_Hidraulica.runtimeconfig.dev.json
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\bin\Debug\netcoreapp3.1\ACA_Hidraulica.dll
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\bin\Debug\netcoreapp3.1\ACA_Hidraulica.pdb
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.csproj.AssemblyReference.cache
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.Form1.resources
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.MarcoTeorico.resources
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.PrimerFormulario.resources
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.Properties.Resources.resources
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.Proyecto.resources
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.csproj.GenerateResource.cache
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.AssemblyInfoInputs.cache
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.AssemblyInfo.cs
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.csproj.CoreCompileInputs.cache
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.dll
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.pdb
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.genruntimeconfig.cache
+C:\Users\DellWin10\Documents\github\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.SegundoFormulario.resources

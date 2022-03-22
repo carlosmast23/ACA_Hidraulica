@@ -10,6 +10,8 @@ namespace ACA_Hidraulica
 {
     public partial class PrimerFormulario : Form
     {
+        public double gravedad = 9.80665;
+
         public List<int> temperaturas;
         public List<float> viscosidadesCinematica;
         public List<float> densidades;
@@ -93,24 +95,77 @@ namespace ACA_Hidraulica
 
             if (checkBox2.Checked)
             {
-                if(textVelocidad.Text.Length == 0 || textDiametro.Text.Length == 0 || labelViscosidadCinematica.Text.Length>0)
-                {
-                    MessageBox.Show("Ingrese todos los datos necesarios para calcular!!");
-                    return;
-                }
+                //if(textVelocidad.Text.Length == 0 || textDiametro.Text.Length == 0 || labelViscosidadCinematica.Text.Length==0)
+                //{
+                //    MessageBox.Show("Ingrese todos los datos necesarios para calcular!!");
+                //    return;
+                //}
+
                 double Reinolds = (Convert.ToDouble(textVelocidad.Text) * Convert.ToDouble(textDiametro.Text)) / Convert.ToDouble(labelViscosidadCinematica.Text);
-                textResultado.Text = "" + Reinolds;
+                //textResultado.Text = "" + Reinolds;
+                lblReynolds.Text= "" + Reinolds;
+
+                if (Reinolds < 2000)
+                {
+                    textResultado.Text = "Flujo Laminar";
+                }
+                else if (Reinolds > 4000)
+                {
+                    textResultado.Text = "Flujo Turbulento";
+                }
+                else
+                {
+                    textResultado.Text = "Ingrese datos nuevamente";
+                }
             }
 
-            if(!checkBox1.Checked || !checkBox2.Checked)
-            {
-                MessageBox.Show("Ingrese todos los datos necesarios para calcular!!");
-            }
+            //if(!checkBox1.Checked || !checkBox2.Checked)
+            //{
+            //    MessageBox.Show("Ingrese todos los datos necesarios para calcular!!");
+            //}
         }
 
         private void PrimerFormulario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SegundoFormulario segundoFormulario = new SegundoFormulario(obtenerPerdidasLocales(),potenciaNeta(),potenciaInstalada());
+            segundoFormulario.ShowDialog();
+            this.Visible = true;
+        }
+
+        private double obtenerPerdidasLocales()
+        {
+            double resultado = (Convert.ToDouble(textCaudal.Text) * Convert.ToDouble(textVelocidad.Text)* Convert.ToDouble(textVelocidad.Text)) / gravedad;
+            return resultado;
+        }
+
+        //Obtiene el caudal o la variable Q
+        private double calcularCaudal()
+        {
+            double resultado = Convert.ToDouble(textVelocidad.Text) * Convert.ToDouble(textLongitud.Text);
+            return resultado;
+        }
+
+        private double potenciaNeta()
+        {
+            double resultado = Convert.ToDouble(textElevacion2.Text) - Convert.ToDouble(textElevacion1.Text) + obtenerPerdidasLocales();
+            resultado = resultado * calcularCaudal() * gravedad;
+            return resultado;
+        }
+
+        private double potenciaInstalada()
+        {
+            double resultado = potenciaNeta() / 100;
+            return resultado;
         }
     }
 }
