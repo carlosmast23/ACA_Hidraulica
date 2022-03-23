@@ -36,10 +36,10 @@ namespace ACA_Hidraulica
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(775, 462);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(687, 265);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 83);
+            this.button1.Size = new System.Drawing.Size(166, 56);
             this.button1.TabIndex = 8;
             this.button1.Text = "Marco teoríco";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,10 +47,10 @@ namespace ACA_Hidraulica
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(779, 555);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(687, 370);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 83);
+            this.button2.Size = new System.Drawing.Size(166, 50);
             this.button2.TabIndex = 9;
             this.button2.Text = "Proyecto";
             this.button2.UseVisualStyleBackColor = true;
@@ -58,13 +58,13 @@ namespace ACA_Hidraulica
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1240, 692);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(912, 482);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nombre Apellido";

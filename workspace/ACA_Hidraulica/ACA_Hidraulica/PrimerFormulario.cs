@@ -86,15 +86,29 @@ namespace ACA_Hidraulica
             }
         }
 
+        private double calcularArea()
+        {
+            double area = (Math.PI / 4) / Convert.ToDouble(textDiametro.Text);
+            return area;
+        }
+
+        private double calcularVelocidad()
+        {
+            double velocidad = Convert.ToDouble(textCaudal.Text) / calcularArea();
+            return velocidad;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if(checkBox1.Checked)
             {
-                //float Reinolds = 
+                double velocidad = calcularVelocidad();
+                textVelocidad.Text = velocidad.ToString();
+
             }
 
-            if (checkBox2.Checked)
-            {
+            //if (checkBox2.Checked)
+            //{
                 //if(textVelocidad.Text.Length == 0 || textDiametro.Text.Length == 0 || labelViscosidadCinematica.Text.Length==0)
                 //{
                 //    MessageBox.Show("Ingrese todos los datos necesarios para calcular!!");
@@ -117,7 +131,7 @@ namespace ACA_Hidraulica
                 {
                     textResultado.Text = "Ingrese datos nuevamente";
                 }
-            }
+            //}
 
             //if(!checkBox1.Checked || !checkBox2.Checked)
             //{
@@ -137,35 +151,88 @@ namespace ACA_Hidraulica
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SegundoFormulario segundoFormulario = new SegundoFormulario(obtenerPerdidasLocales(),potenciaNeta(),potenciaInstalada());
+            SegundoFormulario segundoFormulario = new SegundoFormulario(obtenerPerdidasLocales(),potenciaNeta(),potenciaInstalada(),calcularPotenciaLongitudinal());
             segundoFormulario.ShowDialog();
             this.Visible = true;
         }
 
         private double obtenerPerdidasLocales()
         {
-            double resultado = (Convert.ToDouble(textCaudal.Text) * Convert.ToDouble(textVelocidad.Text)* Convert.ToDouble(textVelocidad.Text)) / gravedad;
+            double resultado = (Convert.ToDouble(labelRugosidad.Text) * Convert.ToDouble(textVelocidad.Text)* Convert.ToDouble(textVelocidad.Text)) / (2*gravedad);
             return resultado;
         }
 
         //Obtiene el caudal o la variable Q
         private double calcularCaudal()
         {
-            double resultado = Convert.ToDouble(textVelocidad.Text) * Convert.ToDouble(textLongitud.Text);
+            double resultado = Convert.ToDouble(textVelocidad.Text) * calcularArea();
+            return resultado;
+        }
+
+        private double calcularCaudalMasivo()
+        { 
+            double resultado= Convert.ToDouble(labelDensidad.Text) * calcularArea();
             return resultado;
         }
 
         private double potenciaNeta()
         {
             double resultado = Convert.ToDouble(textElevacion2.Text) - Convert.ToDouble(textElevacion1.Text) + obtenerPerdidasLocales();
-            resultado = resultado * calcularCaudal() * gravedad;
+            resultado = resultado * calcularCaudalMasivo() * gravedad;
             return resultado;
         }
 
         private double potenciaInstalada()
         {
-            double resultado = potenciaNeta() / 100;
+            double resultado = potenciaNeta()* Convert.ToDouble(textEficiencia.Text) / 100;
             return resultado;
+        }
+
+        private double calcularF()
+        {
+            double reinolds = Convert.ToDouble(labelRugosidad.Text);
+            double rugosidad = Convert.ToDouble(labelRugosidad.Text);
+            double densidad = Convert.ToDouble(labelDensidad.Text);
+            double diametro = Convert.ToDouble(textDiametro.Text);
+
+            double resultado = (1 / 3.7) * (rugosidad / densidad);
+            double numerador = 4.518 * Math.Log(reinolds / 7);
+            double denominador = reinolds * (1+1/29*Math.Pow(reinolds,0.52)*Math.Pow((rugosidad/diametro),0.7));
+            resultado = resultado + (numerador / denominador);
+            resultado = Math.Pow(-2 * Math.Log(resultado), -2);
+
+            return resultado;
+        }
+
+        private double calcularPotenciaLongitudinal()
+        {
+            double resultado = calcularF() * (Convert.ToDouble(textLongitud.Text)/ Convert.ToDouble(textDiametro.Text))*(Math.Pow(Convert.ToDouble(textVelocidad.Text),2))/2*gravedad;
+            return resultado;
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textDiametro.Text = "";
+            textCaudal.Text = "";
+            textVelocidad.Text = "";
+            lblReynolds.Text = "0";
+            textResultado.Text = "";
+
+            textLongitud.Text = "";
+            textElevacion1.Text = "";
+            textElevacion2.Text = "";
+            textEficiencia.Text = "";
+
         }
     }
 }

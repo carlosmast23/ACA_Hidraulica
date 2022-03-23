@@ -38,10 +38,10 @@ namespace ACA_Hidraulica
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(955, 322);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkBox1.Location = new System.Drawing.Point(433, 349);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(175, 29);
+            this.checkBox1.Size = new System.Drawing.Size(154, 25);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Cálculo de Wmax";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -50,20 +50,20 @@ namespace ACA_Hidraulica
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(955, 361);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkBox2.Location = new System.Drawing.Point(627, 353);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(200, 29);
+            this.checkBox2.Size = new System.Drawing.Size(179, 25);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Cálculo de tensiones";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1001, 511);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(291, 343);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 38);
+            this.button1.Size = new System.Drawing.Size(98, 35);
             this.button1.TabIndex = 5;
             this.button1.Text = "Acceder";
             this.button1.UseVisualStyleBackColor = true;
@@ -71,14 +71,13 @@ namespace ACA_Hidraulica
             // 
             // Proyecto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1264, 679);
+            this.ClientSize = new System.Drawing.Size(1051, 495);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Proyecto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
