@@ -88,7 +88,7 @@ namespace ACA_Hidraulica
 
         private double calcularArea()
         {
-            double area = (Math.PI / 4) / Convert.ToDouble(textDiametro.Text);
+            double area = (Math.PI / 4) *Math.Pow(Convert.ToDouble(textDiametro.Text),2);
             return area;
         }
 

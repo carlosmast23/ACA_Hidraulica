@@ -61,3 +61,4 @@ C:\Users\CARLOS_CODESOFT\Documents\github\trabajos_codesoft\ACA_Hidraulica\works
 C:\Users\CARLOS_CODESOFT\Documents\github\trabajos_codesoft\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.pdb
 C:\Users\CARLOS_CODESOFT\Documents\github\trabajos_codesoft\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.genruntimeconfig.cache
 C:\Users\Lenovo01\Documents\Git\proyectos academicos\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.SegundoFormulario.resources
+C:\Users\CARLOS_CODESOFT\Documents\github\trabajos_codesoft\ACA_Hidraulica\workspace\ACA_Hidraulica\ACA_Hidraulica\obj\Debug\netcoreapp3.1\ACA_Hidraulica.SegundoEjFormulario.resources

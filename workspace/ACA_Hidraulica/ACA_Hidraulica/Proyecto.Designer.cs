@@ -38,31 +38,35 @@ namespace ACA_Hidraulica
             // checkBoxCalculo1
             // 
             this.checkBoxCalculo1.AutoSize = true;
+            this.checkBoxCalculo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.checkBoxCalculo1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxCalculo1.Location = new System.Drawing.Point(433, 349);
+            this.checkBoxCalculo1.ForeColor = System.Drawing.Color.White;
+            this.checkBoxCalculo1.Location = new System.Drawing.Point(921, 315);
             this.checkBoxCalculo1.Name = "checkBoxCalculo1";
-            this.checkBoxCalculo1.Size = new System.Drawing.Size(154, 25);
+            this.checkBoxCalculo1.Size = new System.Drawing.Size(298, 25);
             this.checkBoxCalculo1.TabIndex = 0;
-            this.checkBoxCalculo1.Text = "Cálculo de Wmax";
-            this.checkBoxCalculo1.UseVisualStyleBackColor = true;
+            this.checkBoxCalculo1.Text = "Cálculo de la potencia de una bomba";
+            this.checkBoxCalculo1.UseVisualStyleBackColor = false;
             this.checkBoxCalculo1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBoxCalculo2
             // 
             this.checkBoxCalculo2.AutoSize = true;
+            this.checkBoxCalculo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.checkBoxCalculo2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxCalculo2.Location = new System.Drawing.Point(627, 349);
+            this.checkBoxCalculo2.ForeColor = System.Drawing.Color.White;
+            this.checkBoxCalculo2.Location = new System.Drawing.Point(921, 367);
             this.checkBoxCalculo2.Name = "checkBoxCalculo2";
-            this.checkBoxCalculo2.Size = new System.Drawing.Size(179, 25);
+            this.checkBoxCalculo2.Size = new System.Drawing.Size(282, 25);
             this.checkBoxCalculo2.TabIndex = 1;
-            this.checkBoxCalculo2.Text = "Cálculo de tensiones";
-            this.checkBoxCalculo2.UseVisualStyleBackColor = true;
+            this.checkBoxCalculo2.Text = "Cálculo de potencia de una turbina";
+            this.checkBoxCalculo2.UseVisualStyleBackColor = false;
             this.checkBoxCalculo2.CheckedChanged += new System.EventHandler(this.checkBoxCalculo2_CheckedChanged);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(291, 343);
+            this.button1.Location = new System.Drawing.Point(1033, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 35);
             this.button1.TabIndex = 5;
@@ -75,7 +79,7 @@ namespace ACA_Hidraulica
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1051, 495);
+            this.ClientSize = new System.Drawing.Size(1268, 518);
             this.Controls.Add(this.checkBoxCalculo2);
             this.Controls.Add(this.checkBoxCalculo1);
             this.Controls.Add(this.button1);
