@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1o1ddqQ47qW+5WXNFYuWKR7SJwzKc8Hvsimtls+iXgeauPueoihHMsAnR0AjxRDz3srZyCbJMoiDL0Yq+Tun/w==",
+  "dgSpecHash": "YCufJecbAESW13dDC/4XYEnXGn2KOjbg5/pewY3xB7jIJqJ1yrJYYyb5bMV6YcWeJgkkDpM7/fh+eqB5YJYCFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo01\\Documents\\Git\\proyectos academicos\\ACA_Hidraulica\\workspace\\ACA_Hidraulica\\ACA_Hidraulica\\ACA_Hidraulica.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Lenovo01\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.19\\microsoft.netcore.app.host.win-x64.3.1.19.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\CARLOS_CODESOFT\\Documents\\github\\trabajos_codesoft\\ACA_Hidraulica\\workspace\\ACA_Hidraulica\\ACA_Hidraulica\\ACA_Hidraulica.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

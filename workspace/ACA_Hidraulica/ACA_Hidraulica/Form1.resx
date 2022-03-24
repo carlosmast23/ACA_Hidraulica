@@ -61,7 +61,11 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD
         wAAADsABataJCQAA/7JJREFUeF7svQdgJEed78977/8ecAEDd9jcwcEFDhMODBiDifbdEQ9srzcobrDX
+=======
+        vwAADr8BOAVTJAAA/7JJREFUeF7svQdgJEed78977/8ecAEDd9jcwcEFDhMODBiDifbdEQ9srzcobrDX
+>>>>>>> 81ca7efa6424d99711cf2661fb60281f0643302d
         xsY2jhgHjHMOG6RJkna967DZm3POOUirHEdplMOk7ukc/r9fVc9oVDPSjLSateztnz8rz3RX6pqu6vp2
         pY+0hjUbGxubSUUbp7ZxSltYbg0CSmtQbQ1qrSG9JaR7wwROb+b0Fl5v4/V2TgPaOK01RkKAw0jHjY2N
         jc2HExWACrON01vDRkvIaKbAZw7QWzitJaw1h5CWMLixKuTWsNISUpuDmjeoe4OGN2R4w4aXM6AqbiZe

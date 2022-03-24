@@ -39,9 +39,6 @@ namespace ACA_Hidraulica
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelViscosidadCinematica = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -61,7 +58,6 @@ namespace ACA_Hidraulica
             this.textElevacion2 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textElevacion1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.textLongitud = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -76,11 +72,9 @@ namespace ACA_Hidraulica
             this.groupBox1.Controls.Add(this.labelDensidad);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textLongitud);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.labelViscosidadCinematica);
             this.groupBox1.Controls.Add(this.label9);
@@ -93,7 +87,7 @@ namespace ACA_Hidraulica
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(766, 233);
+            this.groupBox1.Size = new System.Drawing.Size(766, 267);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingreso de datos";
@@ -102,7 +96,7 @@ namespace ACA_Hidraulica
             // 
             this.lblReynolds.AutoSize = true;
             this.lblReynolds.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblReynolds.Location = new System.Drawing.Point(489, 118);
+            this.lblReynolds.Location = new System.Drawing.Point(555, 126);
             this.lblReynolds.Name = "lblReynolds";
             this.lblReynolds.Size = new System.Drawing.Size(13, 13);
             this.lblReynolds.TabIndex = 20;
@@ -112,7 +106,7 @@ namespace ACA_Hidraulica
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(407, 118);
+            this.label8.Location = new System.Drawing.Point(489, 126);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 13);
             this.label8.TabIndex = 19;
@@ -123,7 +117,7 @@ namespace ACA_Hidraulica
             // 
             this.labelRugosidad.AutoSize = true;
             this.labelRugosidad.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelRugosidad.Location = new System.Drawing.Point(489, 76);
+            this.labelRugosidad.Location = new System.Drawing.Point(489, 61);
             this.labelRugosidad.Name = "labelRugosidad";
             this.labelRugosidad.Size = new System.Drawing.Size(13, 13);
             this.labelRugosidad.TabIndex = 18;
@@ -132,7 +126,7 @@ namespace ACA_Hidraulica
             // comboBoxMateriales
             // 
             this.comboBoxMateriales.FormattingEnabled = true;
-            this.comboBoxMateriales.Location = new System.Drawing.Point(156, 76);
+            this.comboBoxMateriales.Location = new System.Drawing.Point(223, 221);
             this.comboBoxMateriales.Name = "comboBoxMateriales";
             this.comboBoxMateriales.Size = new System.Drawing.Size(173, 28);
             this.comboBoxMateriales.TabIndex = 17;
@@ -142,7 +136,7 @@ namespace ACA_Hidraulica
             // 
             this.labelDensidad.AutoSize = true;
             this.labelDensidad.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDensidad.Location = new System.Drawing.Point(489, 57);
+            this.labelDensidad.Location = new System.Drawing.Point(489, 46);
             this.labelDensidad.Name = "labelDensidad";
             this.labelDensidad.Size = new System.Drawing.Size(13, 13);
             this.labelDensidad.TabIndex = 16;
@@ -152,7 +146,7 @@ namespace ACA_Hidraulica
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(407, 76);
+            this.label10.Location = new System.Drawing.Point(407, 61);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(66, 13);
             this.label10.TabIndex = 15;
@@ -162,7 +156,7 @@ namespace ACA_Hidraulica
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(399, 57);
+            this.label3.Location = new System.Drawing.Point(399, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 13);
             this.label3.TabIndex = 15;
@@ -170,59 +164,30 @@ namespace ACA_Hidraulica
             // 
             // checkBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(264, 177);
+            this.checkBox2.Location = new System.Drawing.Point(38, 133);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.Size = new System.Drawing.Size(144, 28);
             this.checkBox2.TabIndex = 14;
+            this.checkBox2.Text = "Velocidad:";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(58, 177);
+            this.checkBox1.Location = new System.Drawing.Point(38, 169);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.Size = new System.Drawing.Size(75, 24);
             this.checkBox1.TabIndex = 13;
+            this.checkBox1.Text = "Caudal";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(199, 178);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Velocidad:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(6, 118);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Diametro:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(6, 177);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Caudal:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(350, 40);
+            this.label4.Location = new System.Drawing.Point(223, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 13);
             this.label4.TabIndex = 10;
@@ -230,27 +195,27 @@ namespace ACA_Hidraulica
             // 
             // labelViscosidadCinematica
             // 
-            this.labelViscosidadCinematica.AutoSize = true;
-            this.labelViscosidadCinematica.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelViscosidadCinematica.Location = new System.Drawing.Point(489, 41);
+            this.labelViscosidadCinematica.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelViscosidadCinematica.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelViscosidadCinematica.Location = new System.Drawing.Point(223, 46);
             this.labelViscosidadCinematica.Name = "labelViscosidadCinematica";
-            this.labelViscosidadCinematica.Size = new System.Drawing.Size(13, 13);
+            this.labelViscosidadCinematica.Size = new System.Drawing.Size(152, 28);
             this.labelViscosidadCinematica.TabIndex = 9;
             this.labelViscosidadCinematica.Text = "0";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(70, 76);
+            this.label9.Location = new System.Drawing.Point(38, 224);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 20);
+            this.label9.Size = new System.Drawing.Size(127, 20);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Material:";
+            this.label9.Text = "Tipo de Material:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 35);
+            this.label2.Location = new System.Drawing.Point(38, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 20);
             this.label2.TabIndex = 8;
@@ -258,47 +223,50 @@ namespace ACA_Hidraulica
             // 
             // textResultado
             // 
-            this.textResultado.Location = new System.Drawing.Point(407, 145);
+            this.textResultado.Location = new System.Drawing.Point(489, 142);
             this.textResultado.Multiline = true;
             this.textResultado.Name = "textResultado";
-            this.textResultado.Size = new System.Drawing.Size(270, 38);
+            this.textResultado.Size = new System.Drawing.Size(237, 102);
             this.textResultado.TabIndex = 7;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(156, 32);
+            this.comboBox1.Location = new System.Drawing.Point(38, 46);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 28);
+            this.comboBox1.Size = new System.Drawing.Size(153, 28);
             this.comboBox1.TabIndex = 6;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textVelocidad
             // 
-            this.textVelocidad.Location = new System.Drawing.Point(199, 194);
+            this.textVelocidad.Location = new System.Drawing.Point(223, 133);
             this.textVelocidad.Name = "textVelocidad";
-            this.textVelocidad.Size = new System.Drawing.Size(101, 27);
+            this.textVelocidad.PlaceholderText = "Ingreso de Velocidad";
+            this.textVelocidad.Size = new System.Drawing.Size(152, 27);
             this.textVelocidad.TabIndex = 5;
             // 
             // textCaudal
             // 
-            this.textCaudal.Location = new System.Drawing.Point(6, 194);
+            this.textCaudal.Location = new System.Drawing.Point(223, 176);
             this.textCaudal.Name = "textCaudal";
-            this.textCaudal.Size = new System.Drawing.Size(74, 27);
+            this.textCaudal.PlaceholderText = "Ingreso de Caudal";
+            this.textCaudal.Size = new System.Drawing.Size(152, 27);
             this.textCaudal.TabIndex = 2;
             // 
             // textDiametro
             // 
-            this.textDiametro.Location = new System.Drawing.Point(6, 135);
+            this.textDiametro.Location = new System.Drawing.Point(38, 88);
             this.textDiametro.Name = "textDiametro";
-            this.textDiametro.Size = new System.Drawing.Size(74, 27);
+            this.textDiametro.PlaceholderText = "Diametro Tubería";
+            this.textDiametro.Size = new System.Drawing.Size(153, 27);
             this.textDiametro.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(218, 251);
+            this.button1.Location = new System.Drawing.Point(489, 40);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 37);
+            this.button1.Size = new System.Drawing.Size(123, 94);
             this.button1.TabIndex = 1;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
@@ -306,9 +274,9 @@ namespace ACA_Hidraulica
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(588, 251);
+            this.button3.Location = new System.Drawing.Point(636, 40);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(68, 37);
+            this.button3.Size = new System.Drawing.Size(90, 35);
             this.button3.TabIndex = 7;
             this.button3.Text = "Limpiar";
             this.button3.UseVisualStyleBackColor = true;
@@ -316,9 +284,9 @@ namespace ACA_Hidraulica
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(419, 251);
+            this.button2.Location = new System.Drawing.Point(636, 97);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 37);
+            this.button2.Size = new System.Drawing.Size(90, 37);
             this.button2.TabIndex = 8;
             this.button2.Text = "Continuar";
             this.button2.UseVisualStyleBackColor = true;
@@ -326,14 +294,15 @@ namespace ACA_Hidraulica
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.textEficiencia);
             this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.textElevacion2);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.textElevacion1);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textLongitud);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.Location = new System.Drawing.Point(12, 285);
             this.groupBox2.Name = "groupBox2";
@@ -366,7 +335,7 @@ namespace ACA_Hidraulica
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(15, 128);
+            this.label13.Location = new System.Drawing.Point(15, 91);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(68, 13);
             this.label13.TabIndex = 17;
@@ -374,7 +343,7 @@ namespace ACA_Hidraulica
             // 
             // textElevacion2
             // 
-            this.textElevacion2.Location = new System.Drawing.Point(15, 145);
+            this.textElevacion2.Location = new System.Drawing.Point(15, 107);
             this.textElevacion2.Name = "textElevacion2";
             this.textElevacion2.Size = new System.Drawing.Size(74, 27);
             this.textElevacion2.TabIndex = 16;
@@ -384,7 +353,7 @@ namespace ACA_Hidraulica
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(15, 78);
+            this.label12.Location = new System.Drawing.Point(15, 27);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 13);
             this.label12.TabIndex = 15;
@@ -392,29 +361,19 @@ namespace ACA_Hidraulica
             // 
             // textElevacion1
             // 
-            this.textElevacion1.Location = new System.Drawing.Point(15, 95);
+            this.textElevacion1.Location = new System.Drawing.Point(15, 44);
             this.textElevacion1.Name = "textElevacion1";
             this.textElevacion1.Size = new System.Drawing.Size(74, 27);
             this.textElevacion1.TabIndex = 14;
             this.textElevacion1.Text = "0";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(15, 27);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 13);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Longitud:";
-            // 
             // textLongitud
             // 
-            this.textLongitud.Location = new System.Drawing.Point(15, 44);
+            this.textLongitud.Location = new System.Drawing.Point(223, 88);
             this.textLongitud.Name = "textLongitud";
-            this.textLongitud.Size = new System.Drawing.Size(74, 27);
+            this.textLongitud.PlaceholderText = "Longitud Tubería";
+            this.textLongitud.Size = new System.Drawing.Size(152, 27);
             this.textLongitud.TabIndex = 12;
-            this.textLongitud.Text = "0";
             // 
             // PrimerFormulario
             // 
@@ -422,10 +381,7 @@ namespace ACA_Hidraulica
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(810, 470);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "PrimerFormulario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -454,9 +410,6 @@ namespace ACA_Hidraulica
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBoxMateriales;
         private System.Windows.Forms.Label labelDensidad;
         private System.Windows.Forms.Label label10;
@@ -471,7 +424,6 @@ namespace ACA_Hidraulica
         private System.Windows.Forms.TextBox textElevacion2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textElevacion1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textLongitud;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textEficiencia;
