@@ -429,7 +429,7 @@ namespace ACA_Hidraulica
             this.Controls.Add(this.groupBox1);
             this.Name = "PrimerFormulario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PrimerFormulario";
+            this.Text = "Ejercicio I";
             this.Load += new System.EventHandler(this.PrimerFormulario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

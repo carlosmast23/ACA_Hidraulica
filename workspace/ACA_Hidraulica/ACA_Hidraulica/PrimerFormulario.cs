@@ -32,7 +32,7 @@ namespace ACA_Hidraulica
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             temperaturaSeleccionada = comboBox1.SelectedIndex;
-            viscosidadCinematica = (float)Math.Pow(viscosidadesCinematica[temperaturaSeleccionada], -6);
+            viscosidadCinematica = (float)viscosidadesCinematica[temperaturaSeleccionada] * (float)Math.Pow(10, -6);
             labelViscosidadCinematica.Text = "" + viscosidadCinematica;
             labelDensidad.Text = "" + densidades[temperaturaSeleccionada];
         }

@@ -81,6 +81,7 @@ namespace ACA_Hidraulica
             this.Controls.Add(this.button1);
             this.Name = "Proyecto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Opciones";
             this.ResumeLayout(false);
             this.PerformLayout();
 

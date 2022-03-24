@@ -126,7 +126,7 @@ namespace ACA_Hidraulica
             this.Controls.Add(this.txtPerdidasLocales);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SegundoFormulario";
-            this.Text = "SegundoFormulario";
+            this.Text = "Ejercicio I.I";
             this.Load += new System.EventHandler(this.SegundoFormulario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

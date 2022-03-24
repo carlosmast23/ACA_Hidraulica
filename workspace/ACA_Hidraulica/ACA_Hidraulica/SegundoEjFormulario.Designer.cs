@@ -416,7 +416,7 @@ namespace ACA_Hidraulica
             this.textLongitud.TabIndex = 12;
             this.textLongitud.Text = "0";
             // 
-            // PrimerFormulario
+            // SegundoEjFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -427,9 +427,9 @@ namespace ACA_Hidraulica
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "PrimerFormulario";
+            this.Name = "SegundoEjFormulario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PrimerFormulario";
+            this.Text = "Ejercicio II";
             this.Load += new System.EventHandler(this.PrimerFormulario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -38,7 +38,7 @@ namespace ACA_Hidraulica
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "MarcoTeorico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MarcoTeorico";
+            this.Text = "Marco Teorico";
             this.Load += new System.EventHandler(this.MarcoTeorico_Load);
             this.ResumeLayout(false);
 

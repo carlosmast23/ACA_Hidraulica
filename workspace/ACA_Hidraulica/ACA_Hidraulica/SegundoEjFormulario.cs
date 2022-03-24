@@ -32,14 +32,14 @@ namespace ACA_Hidraulica
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             temperaturaSeleccionada = comboBox1.SelectedIndex;
-            viscosidadCinematica = (float)Math.Pow(viscosidadesCinematica[temperaturaSeleccionada], -6);
+            viscosidadCinematica = (float)viscosidadesCinematica[temperaturaSeleccionada]*(float)Math.Pow(10, -6);
             labelViscosidadCinematica.Text = "" + viscosidadCinematica;
             labelDensidad.Text = "" + densidades[temperaturaSeleccionada];
         }
         private void comboBoxMateriales_SelectedIndexChanged(object sender, EventArgs e)
         {
             materialSeleccionado = comboBoxMateriales.SelectedIndex;
-            labelRugosidad.Text = "" + rugosidad[materialSeleccionado];
+            labelRugosidad.Text = "" + ((float)rugosidad[materialSeleccionado]/1000)*(float)Math.Pow(10, -6);
         }
         public void DatosIniciales()
         {
@@ -88,7 +88,7 @@ namespace ACA_Hidraulica
 
         private double calcularArea()
         {
-            double area = (Math.PI / 4) / Convert.ToDouble(textDiametro.Text);
+            double area = (Math.PI / 4) * (Math.Pow(Convert.ToDouble(textDiametro.Text), 2));
             return area;
         }
 
@@ -116,7 +116,6 @@ namespace ACA_Hidraulica
                 //}
 
                 double Reinolds = (Convert.ToDouble(textVelocidad.Text) * Convert.ToDouble(textDiametro.Text)) / Convert.ToDouble(labelViscosidadCinematica.Text);
-                //textResultado.Text = "" + Reinolds;
                 lblReynolds.Text= "" + Reinolds;
 
                 if (Reinolds < 2000)
@@ -131,6 +130,7 @@ namespace ACA_Hidraulica
                 {
                     textResultado.Text = "Ingrese datos nuevamente";
                 }
+            perdidasLongitudinales();
             //}
 
             //if(!checkBox1.Checked || !checkBox2.Checked)
@@ -203,7 +203,31 @@ namespace ACA_Hidraulica
 
             return resultado;
         }
+        private double perdidasLongitudinales()
+        {
+            double constante1 = 0.25f;
+            double constante2 = 3.7f;
+            double constante3 = 5.74f;
+            double diametro = Convert.ToDouble(textDiametro.Text);
+            double rugosidad = Convert.ToDouble(labelRugosidad.Text);
+            double reinolds = Convert.ToDouble(labelRugosidad.Text);
 
+            double fraccion1 = 1 / (constante2 * (diametro / rugosidad));
+            double fraccion2 = constante3 / Math.Pow(reinolds, 0.9);
+            double denominador = Math.Log(fraccion1 + fraccion2) * Math.Log(fraccion1 + fraccion2);
+            double resultado = constante1 / denominador;
+            Console.WriteLine("Perdidas longitudinales: " + resultado);
+            return resultado;
+        }
+        private double perdidasLocales()
+        {
+            double rugosidad = Convert.ToDouble(labelRugosidad.Text);
+            double velocidad = Convert.ToDouble(textVelocidad.Text);
+            double resultado = rugosidad * ((velocidad * velocidad) / 2 * 9.8);
+            Console.WriteLine("Perdidas locales: " + resultado);
+            return resultado;
+            
+        }
         private double calcularPotenciaLongitudinal()
         {
             double resultado = calcularF() * (Convert.ToDouble(textLongitud.Text)/ Convert.ToDouble(textDiametro.Text))*(Math.Pow(Convert.ToDouble(textVelocidad.Text),2))/2*gravedad;
